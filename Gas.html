@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>PrimeApe Big Top Circus</title>
+<meta name="title" content="PrimeApe Big Top Circus" />
+<meta name="description" content="....." />
+<meta name="google-site-verification" content="slY6Nfx6KZutVMzequ-eVlhGpchri-c3fVoQgRcQJfo" />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="....." />
+<meta property="og:title" content="PrimeApe Big Top Circus" />
+<meta property="og:description" content="....." />
+<meta property="og:image" content="...." />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="....." />
+<meta property="twitter:title" content="PrimeApe Big Top Circus" />
+<meta property="twitter:description" content="...." />
+<meta property="twitter:image" content="...." />
+  
+  <!-- Favicons -->
+  <link href="assets/img/ape.png" rel="icon" type="image/png">
+  <link href="assets/img/ape.png" rel="apple-touch-icon">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/styleNew.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="page6">
+
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+  </script>
+
+
+
+<style>
+.dropdown-content {
+    column-count: 2;
+    column-gap: 20px; /* Adjust the gap between columns as needed */
+    background-color: #000000; /* Set the background color to black */
+    color: #ffffff; /* Set the text color to white */
+    padding: 10px; /* Add padding to give some space around the content */
+  }
+
+  .dropdown-content a {
+    display: block;
+    margin-bottom: 8px; /* Adjust the margin between links as needed */
+    color: #ffffff; /* Set the text color to white */
+    text-decoration: none; /* Remove the underline on links */
+  }
+
+  .dropdown-content a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+  
+</style> 
+
+
+<header id="header" class="fixed-top">
+  <div class="d-flex align-items-center justify-center">
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="index.html">
+            <strong class="texting" style="color: #ffde59; font-size: 25px;">Home</strong>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="https://bafybeicb2hlad6zs4kc4yvn5xbbzti6krjtpoxrysg42d4e5s5oubbipum.ipfs.dweb.link/#/address/0x0000000000000000000000000000000000000000">
+            <strong class="texting" style="color: #ffde59; font-size: 25px;">Miner Contract</strong>
+          </a>
+        </li>
+        <li class="nav-item">
+          <button id="enableMetamask" class="connect-btn" onclick="myConnect()">
+            <span class="icon icon-connect"></span>
+            <span>Connect</span>
+          </button>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="dropbtn texting" style="color: #ffde59; font-size: 25px;">Dapps</button>
+            <div class="dropdown-content">
+              <a href="FixedAPR.html">Kiddie Rides</a>
+              <a href="ROI.html">Main Attraction</a>
+              <a href="Gas.html">Petting Zoo</a> 
+               
+              <a href="Raffle.html">Lucky Tickets</a>
+              <a href="Presale.html">PreSale</a>
+              <a href="Mint.html">Mint</a>
+            </div>
+          </div>
+        </li>
+        </li>
+        <li>
+          
+        </li>
+      </ul>
+    <!-- Mobile Navbar Toggle -->
+    <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+        </div>
+      </header>
+  <br>
+
+  <section>
+    <div class="border-4 border-[#00BF63] w-full bg-[transparent] h-fit rounded-lg">
+      <div class="shadow-lg p-2 border-t-transparent border-t-4 border-l-4 border-l-transparent border-transparent-500 text-[#ff0099] text-center rounded-lg">
+        <div class="p-2">
+          <div>
+            <div class="content-box" data-aos="zoom-in">
+              <div class="info-container" style="padding: 0px;" data-aos="zoom-in">
+                <div class="info-container-2 d-flex flex-wrap justify-content-center">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="d-flex flex-column pt-3">
+                      <div class="text-center" style="margin-bottom: 10px;">
+                        <img src="assets/img/petzooban.png" alt="The Fountain" style="max-width: 60%; height: auto;" />
+                      </div>
+                      <div class="">
+                        
+                        <div class="row">
+                            <!-- Site Stats -->
+                            <div class="col-md-12">
+                                <h4 class="text-center texting">Site Stats</h4>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-4">
+                          <div class="stat d-flex flex-column justify-content-center align-items-center">
+                            <h3 class="text-center text3" style="font-size: 25px;">Rewards</h3>
+                            <div class="data">
+                              <span class="number mb-md-2 busd" style="letter-spacing: 2px; font-size: 22px;" id="total-ref">-</span>
+                            </div>
+                          </div>
+                        </div>
+
+                          <div class="col-md-4">
+
+                          <div class="stat d-flex flex-column justify-content-center align-items-center">
+                            <h3 class="text-center text3" style="font-size: 25px;">Balance</h3>
+                            <div class="data">
+                              <span class="number mb-md-2 busd" style="letter-spacing: 2px; font-size: 22px;" id="contract-balance">-</span>
+                            </div>
+                          </div>
+                        </div>
+
+                          <div class="col-md-4">
+
+                          <div class="stat d-flex flex-column justify-content-center align-items-center">
+                            <h3 class="text-center text3" style="font-size: 25px;">Users</h3>
+                            <div class="data">
+                              <span class="number mb-md-2 busd" style="letter-spacing: 2px; font-size: 22px;" id="total-players">-</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <br>
+                        <h3 class="text-center texting" style="margin-left: 5px;">
+                          Benefits
+                        </h3>
+                        <hr>
+                        
+                        <div class="">
+                          <div class="row">
+                            <!-- First Row -->
+                            <div class="col-lg-6 col-md-6 mb-3">
+                              <h4 class="mb-4 mb-sm-0 text-left text4" style="font-size: 21px;">
+                                <span id="daily-rate">
+                                  0% </span> Daily ~  
+                                  <span id="daily-apr">0% </span> APR </span>
+                                
+                              </h4>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-3">
+                              <h4 class="mb-4 mb-sm-0 text-left text4" style="font-size: 21px;">
+                                <span id="daily-compound">
+                                  0%  </span> Roll Bonus
+                                </span>
+                              </h4>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-3">
+                              <h4 class="mb-4 mb-sm-0 text-left text4" style="font-size: 21px;">
+                                <span id="ref-bonus">
+                                  0%  </span> Referrals
+                                </span>
+                              </h4>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-3">
+                              <h4 class="mb-4 mb-sm-0 text-left text4" style="font-size: 21px;">
+                                
+                                  <span id="compound-step">
+                                    0
+                                  </span>
+                                  Hours Roll Cooldown
+                                </span>
+                              </h4>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <!-- Second Row -->
+                            <div class="col-lg-6 col-md-6 mb-3">
+                              <h4 class="mb-4 mb-sm-0 text-left text4" style="font-size: 21px;">
+                                
+                                  <span id="withdraw-cooldown">
+                                    0
+                                  </span>
+                                  Hours Reward Claim Cooldown
+                                </span>
+                              </h4>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-3">
+                              <h4 class="mb-4 mb-sm-0 text-left text4" style="font-size: 21px;">
+                                
+                                  <span id="cutoff-step">
+                                    0
+                                  </span>
+                                  Hours Rewards Accumulation Cut-Off
+                                </span>
+                              </h4>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-3">
+                              <h4 class="mb-4 mb-sm-0 text-left text4" style="font-size: 21px;">
+                                
+                                  <span id="no-tax-compound-count">
+                                    0
+                                  </span>
+                                  Times Mandatory Roll Feature
+                                </span>
+                              </h4>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-3">
+                              <h4 class="mb-4 mb-sm-0 text-left text4" style="font-size: 21px;">
+                                <span id="ref-bonus">
+                                  80% </span>
+                                   Feedback Tax For Early Claims
+                                  
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        
+                        
+                        
+                
+                
+              <hr>
+                <br>
+    
+                <!-- Move the Disclaimer Above the Commanders' Log -->
+                
+                  
+                    <div class="row">
+                      <!-- Disclaimer Section -->
+                      <div class="col-lg-12">
+                        <div>
+                          <h6 class="text-center ">
+                            <i style="color: #12859c;" class="ri-alert-line"></i>
+                            <strong style="color: #12859c;">Disclaimer&nbsp;:&nbsp;</strong>
+                            Funds that are used to initially Feed your APES (including when you want to Roll your position) cannot be withdrawn.
+                                  Your Apes will thank you for feeding them by giving you tokens to feed them more. However, although they are bothering other patrons and picking their pockets 
+                                  your new found friends will get tired. When you use the Roll Button this allows your apes to be excited and convince other to join them . This new larger group will cause even more mischief
+                                  , picking even more pockets. Just remember to not let your Apes to convince you to Roll earnings all the time, take profits responsibly.     
+                                  Please use the application at your own risk.
+                          </h6>
+                          
+                        </div>
+                      </div>
+  
+    
+    <div class="container-fluid">
+      <div class="content-box stats-box">
+        <div class="row">
+          <!-- First Column -->
+          <div class="col-lg-12">
+            <h4 class="text-center texting">User Stats</h4>
+            <hr>
+          </div>
+        </div>
+    
+        <div class="row">
+          <!-- First Column -->
+          <div class="col-lg-6">
+            <div class="stat d-flex justify-between">
+              <div class="header">
+                <h3 class="text-center text3">Initial Deposit </h3></div>
+              <div class="d-flex items-center">
+                <span id="initial-deposit" class="number">0</span>
+                <div><strong class="texting"style="font-size: 18px;">&nbsp;BNB</strong></div>
+              </div>
+            </div>
+            <div class="stat d-flex justify-between">
+              <div class="header">
+                <h3 class="text-center text3">Total Deposit </h3></div>
+              <div class="d-flex items-center">
+                <span id="total-deposit" class="number">0</span>
+                <div><strong class="texting" style="font-size: 18px;">&nbsp;BNB</strong></div>
+              </div>
+            </div>
+            <div class="stat d-flex justify-between">
+              <div class="header">
+                <h3 class="text-center text3">Total Collected </h3></div>
+              <div class="d-flex items-center">
+                <span id="total-withdrawn" class="number">0</span>
+                <div><strong class="texting" style="font-size: 18px;">&nbsp;BNB</strong></div>
+              </div>
+            </div>
+            <div class="stat d-flex justify-between">
+              <div class="header">
+                <h3 class="text-center text3">Referrals </h3> (<span id="ref-count">0</span>)</div>
+              <div class="d-flex items-center">
+                <span id="ref-rewards-bnb" class="number">0</span>
+                <div><strong class="texting" style="font-size: 18px;">&nbsp;BNB</strong></div>
+              </div>
+            
+              
+            </div>
+            <br>
+            <br>
+            <div class="w-100 justify-center">
+              <div class="first-box">
+                <div class="deposit-container">
+                  <div class="row example">
+                    <div class="col-lg-8">
+                      <div style="line-height: 1.4; font-size: 14px;">
+                        <strong>Reward Example</strong>
+                        <div>
+                          <div>1 <span class="usdc">BNB</span> = <span id="example-miners">0</span> Apes</div>
+                          <div><i class="ri-coins-line ri-1x"></i>Daily Yield: <span id="example-bnb">0</span><span class="usdc">BNB</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="wallet">
+                        
+                        <h3 class="text-center texting" style="font-size: 18px;">Wallet</h3>
+                        <div><span id="user-balance">0</span><span class="usdc">BNB</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-container">
+                    <h3 class="text3" style="padding-left: 5px; padding-bottom: 5px; font-size: 25px;">
+                      Deposit BNB</h3>
+                      <span class="usdc"> Min <span  id="min-deposit">0 </span>, Max <span  id="max-deposit">0</span> </span>
+                      <input class="form-control" id="bnb-spend" name="buy-miners" onChange="updateBuyPrice()" step="100" type="number" value="1">
+                    </span>
+                    <button class="start-btn3 texting" style="width: 100%; margin-bottom: 10px; margin-top: 15px;" id="buy-eggs-btn"
+                      onclick="buyApe()" role="button" disabled>
+                      Feed <span id="eggs-to-buy">0</span> Apes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+         <!-- Second Column -->
+<div class="col-lg-6">
+  <!-- Countdown Timers -->
+  <h2 class="timer text3">
+    
+    Rewards Are Cut Off In
+  </h2>
+  <div style="text-align: center;">
+    <span id="claim-timer">00:00:00</span>
+  </div>
+  <br>
+  <h2 class="timer text3">
+    
+    Roll Bonus IN 
+  </h2>
+  <div style="text-align: center;">
+    <span id="compound-timer">--:--:--</span>
+  </div>
+  <br>
+
+  <div class="deposit-container">
+    <div class="miners-info" style="margin-bottom: unset;">
+      <h3 class=" text3" >
+        
+        <span id="your-miners">0 </span>
+         Apes
+      </h3>
+    
+      <div><i class="bi-arrow-down-short" style="font-size: 27px;"></i>
+      </div>
+      <div style="font-size: 25px;">
+        <i class="ri-coins-line ri-1x usdt"></i>
+        <strong class="busd" id="mined">0</strong>
+        <strong class="texting">BNB</strong>
+      </div>
+      <br>
+      <h3 class="timer text3" >Estimated daily yield:</div>
+      <div style="text-align: center;">
+        <span id="eggs-per-day">0</span>
+        <strong class="texting">BNB</strong>
+      </h3>
+    </div>
+    <div>
+      <br>
+      <h3 class="timer text3" >
+        <i class="bi-arrow-repeat"></i>
+        Deployment Count:
+      </h3>
+      <div style="text-align: center;">
+        <span id="compound-count">0 Time/s</span>
+      </div>
+      <div class="btn-container">
+        <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+          <button class="start-btn texting"
+            style="width: 49%; background: transparent; border: 1px solid white; padding: 8px; margin-top: 5px;"
+            id="withdraw" onclick="claimRewards()" role="button" >
+            Claim
+            <span class="cooldown" id="cooldown-timer">in 00:00:00</span>
+            <span class="tax" id="withdraw-tax">-80% tax</span>
+          </button>
+          
+          <button class=" start-btn3 texting" style="width: 49%; margin-left: 2%;" id="reinvest" onclick="feedMoreApes()"
+            role="button" disabled>
+            Roll
+            <span class="compound">
+              (<span class="compound" id="compound-bonus">+0%</span>)
+            </span>
+          </button>
+        </div>
+      </div>
+
+
+    
+  </div>
+</div>
+</div>
+<hr />
+</div>
+<div class="mt-1 text-center" style="padding: 10px; font-size: 15px; font-weight: 500;">
+Every time you Roll , your Roll Bonus grows by
+<span id="compound-percent">0%</span>
+(max <span id="max-compound">+0%</span>). Rolling 10 times will reset your bonus to 1.  Collecting Rewards will reset your bonus to 0.
+<br>
+<!--  Time until next compound bonus is activated: <span style="font-weight: 700;" id="compound-timer">00:00:00</span> -->
+</div>
+        <hr />
+        <!-- Referral Link Section at the bottom -->
+        <div class="col-lg-12 referral-link">
+          <span>
+            <i class="bi-check2-square"></i> Earn <span id="ref-percent">0%</span> when someone uses your referral link!
+            <a id="reflink"></a>
+            <span onclick="copyRef()">
+              <i class="ri-file-copy-line"></i>
+              <span id="copied"></span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="container">
+          <span style="color: #12859c;">
+          <div>
+            <strong>
+            <text-align>Platform by Dabs And 3D</text-align>  
+        </strong>     
+      </div>
+    </div>
+  </footer>
+  <div id="preloader">
+  </div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short">
+    </i>
+  </a>
+  <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/moment.js"></script>
+  <script src="assets/js/timer.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/gasminer.js"></script>
+</body>
+
+</html>

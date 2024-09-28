@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>PrimeApe Big Top Circus</title>
+  <meta name="title" content="PrimeApe Big Top Circus" />
+  <meta name="description" content="....." />
+  <meta name="google-site-verification" content="slY6Nfx6KZutVMzequ-eVlhGpchri-c3fVoQgRcQJfo" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="....." />
+  <meta property="og:title" content="PrimeApe Big Top Circus" />
+  <meta property="og:description" content="....." />
+  <meta property="og:image" content="...." />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="....." />
+  <meta property="twitter:title" content="PrimeApe Big Top Circus" />
+  <meta property="twitter:description" content="...." />
+  <meta property="twitter:image" content="...." />
+
+  <!-- Favicons -->
+  <link href="assets/img/banner.png" rel="icon" type="image/png">
+  <link href="assets/img/banner.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/styleNew.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="page10">
+
+
+
+  <style>
+    .dropdown-content {
+      column-count: 2;
+      column-gap: 20px;
+      /* Adjust the gap between columns as needed */
+      background-color: #000000;
+      /* Set the background color to black */
+      color: #ffffff;
+      /* Set the text color to white */
+      padding: 10px;
+      /* Add padding to give some space around the content */
+    }
+
+    .dropdown-content a {
+      display: block;
+      margin-bottom: 8px;
+      /* Adjust the margin between links as needed */
+      color: #ffffff;
+      /* Set the text color to white */
+      text-decoration: none;
+      /* Remove the underline on links */
+    }
+
+    .dropdown-content a:hover {
+      text-decoration: underline;
+      /* Add underline on hover */
+    }
+  </style>
+
+
+  <header id="header" class="fixed-top">
+    <div class="d-flex align-items-center justify-center">
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html">
+              <strong class="texting" style="color: #ffde59; font-size: 25px;">Home</strong>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light"
+              href="https://bafybeicb2hlad6zs4kc4yvn5xbbzti6krjtpoxrysg42d4e5s5oubbipum.ipfs.dweb.link/#/address/0x0000000000000000000000000000000000000000">
+              <strong class="texting" style="color: #ffde59; font-size: 25px;">Token Contract</strong>
+            </a>
+          </li>
+          <li class="nav-item">
+            <button id="enableMetamask" class="connect-btn" onclick="myConnect()">
+              <span class="icon icon-connect"></span>
+              <span>Connect</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn texting" style="color: #ffde59; font-size: 25px;">Dapps</button>
+              <div class="dropdown-content">
+                <a href="FixedAPR.html">Kiddie Rides</a>
+                <a href="ROI.html">Main Attraction</a>
+                <a href="Gas.html">Petting Zoo</a>
+
+                <a href="Raffle.html">Lucky Tickets</a>
+                <a href="Presale.html">PreSale</a>
+                <a href="Mint.html">Mint</a>
+              </div>
+            </div>
+          </li>
+          </li>
+          <li>
+
+          </li>
+        </ul>
+        <!-- Mobile Navbar Toggle -->
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <br>
+  <section>
+    <div class="border-4 border-[#00BF63] w-full bg-[transparent] h-fit rounded-lg">
+      <div
+        class="shadow-lg p-2 border-t-transparent border-t-4 border-l-4 border-l-transparent border-transparent-500 text-[#ff0099] text-center rounded-lg">
+        <div class="p-2">
+          <div class="content-box" data-aos="zoom-in">
+            <div class="info-container" style="padding: 0px;" data-aos="zoom-in">
+              <div class="info-container-2 d-flex flex-column align-items-center">
+                <div class="text-center pt-3">
+                  <img src="assets/img/mintban.png" alt="The Fountain" style="max-width: 60%; height: auto;" />
+                </div>
+              </div>
+              <hr />
+              <!-- Disclaimer Section -->
+              <div class="text-center">
+                <h6>
+                  <i style="color: #12859c;" class="ri-alert-line"></i>
+                  <strong style="color: #12599c;">
+                    Disclaimer&nbsp;:&nbsp;
+                  </strong>Welcome to our Mint. Users will be able to mint tokens for set prices which go up for every
+                  100,000 tokens minted.
+                  75% of the BNB collected will be used to buy and burn tokens from the Main LP,
+                  the rest will be used for furhter advancement and promoting of the PrimeApe ecosystem.
+                  Users also have a chance to earn referral rewards by sharing their mint link and having other join the
+                  project.
+
+                  <hr />
+                </h6>
+              </div>
+
+              <!-- Presale Section -->
+              <div class="container-fluid">
+                <div class="content-box stats-box">
+                  <div class="row">
+                    <!-- Presale Header -->
+                    <div class="col-md-12 text-center">
+                      <h4 class="text-center texting">MIntStats</h4>
+
+
+
+                      <hr />
+                      <!-- Flex Row for User Info and Placeholders -->
+<div class="row">
+  <!-- First Column -->
+  <div class="col-md-4 d-flex flex-column text-center">
+      <br>
+      <div class="flex-grow-1">
+          <h3 class="text-center text3" style="font-size: 25px;">Current Mint Price:</h3>
+          <span id="mintPrice">-</span>
+          <div class="mt-4">
+              <h3 class="text-center text3" style="font-size: 25px;">Gas Balance:</h3>
+              <span id="balance">-</span>
+              <div class="mt-4">
+                  <h3 class="text-center text3" style="font-size: 25px;">Dex Price:</h3>
+                  <span id="price">-</span>
+                  <div class="mt-4">
+                      <h3 class="text-center text3" style="font-size: 25px;">User Balance:</h3>
+                      <span id="userBalance">-</span>
+                      <div class="mt-4">
+                          <!-- Input Form for Buying Tokens -->
+                          <div>
+                              <input class="form-control" id="eth-amount" name="approved-spend" step="any" type="number" value="100">
+                              <!-- Mint Tokens Button -->
+                              <div class="d-flex justify-content-between mt-2 text2" style="width: 100%;">
+                                  <button class="start-btn3" style="width: 100%; margin-bottom: 6px; margin-top: 2px; font-size: 1em;" id="buy-tokens-button" role="button">
+                                      Mint Tokens
+                                  </button>
+                              </div>
+                          </div>
+                          <div class="mt-4">
+                              <!-- Referrer Input Form -->
+                              <input class="form-control texting" id="new-referrer-address" name="new-referrer-address" type="text" placeholder="Referrer Address" style="margin-bottom: 7px;">
+                              <button class="start-btn3 text2" style="width: 100%; margin-bottom: 5px;" id="approve-referrer-btn" onclick="approveRef()" role="button">
+                                  Approve New Referrer
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Second Column -->
+  <div class="col-md-4 d-flex flex-column text-center">
+      <br>
+      <div class="flex-grow-1">
+          <h3 class="text-center text3" style="font-size: 25px;">Total Amount Spent:</h3>
+          <span id="total-eth-spent">-</span>
+          <div class="mt-4">
+              <h3 class="text-center text3" style="font-size: 25px;">Total Tokens Minted:</h3>
+              <span id="minted">-</span>
+          </div>
+          <div class="mt-4">
+              <h3 class="text-center text3" style="font-size: 25px;">Total Supply:</h3>
+              <span id="supply">-</span>
+          </div>
+          <div class="mt-4">
+              <h3 class="text-center text3" style="font-size: 25px;">Referrer Address</h3>
+              <span class="number mb-md-2 busd" style="letter-spacing: 2px; font-size: 22px;" id="referrer-address">-</span>
+          </div>
+      </div>
+  </div>
+
+  <!-- Third Column -->
+  <div class="col-md-4 d-flex flex-column text-center">
+      <br>
+      <div class="flex-grow-1">
+          <h3 class="text-center text3" style="font-size: 25px;">Total Burned:</h3>
+          <span id="burned">-</span>
+          <div class="mt-4">
+              <h3 class="text-center text3" style="font-size: 25px;">Circulating Supply:</h3>
+              <span id="circulating">-</span>
+          </div>
+          <div class="mt-4">
+              <h3 class="text-center text3" style="font-size: 25px;">Contract Supply:</h3>
+              <span id="contract">-</span>
+          </div>
+          <div class="mt-4">
+              <h3 class="text-center text3" style="font-size: 25px;">Referrals</h3>
+              <span class="number mb-md-2 busd" style="letter-spacing: 2px; font-size: 22px;" id="ref-count">-</span>
+          </div>
+          <div class="mt-4">
+              <h3 class="text-center text3" style="font-size: 25px;">Referral Rewards</h3>
+              <span class="number mb-md-2 busd" style="letter-spacing: 2px; font-size: 22px;" id="referral-Reward">-</span>
+          </div>
+      </div>
+  </div>
+
+  <!-- Referral Link Section -->
+  <div class="col-lg-12 referral-link text-center mt-4">
+      <span>
+          <i class="bi-check2-square"></i>
+          Earn <span>5%</span> when someone uses your referral link!
+          <span>
+              <a id="reflink"></a>
+              <span onclick="copyRef()">
+                  <i class="ri-file-copy-line"></i>
+                  <span id="copied"></span>
+              </span>
+          </span>
+      </span>
+  </div>
+</div>
+
+
+
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  </main>
+  <footer id="footer">
+    <div class="container">
+      <span style="color: #12859c;">
+        <div>
+          <strong>
+            <text-align>Platform by Dabs And 3D</text-align>
+          </strong>
+        </div>
+    </div>
+  </footer>
+  <div id="preloader">
+  </div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short">
+    </i>
+  </a>
+  <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/moment.js"></script>
+  <script src="assets/js/timer.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/mint.js"></script>
+
+
+</body>
+
+</html>
