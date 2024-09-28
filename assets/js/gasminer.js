@@ -23,7 +23,7 @@ var withdrawCooldown = 0
 
 var contract
 
-const minerAddress = "0x83C2C43e34Ee3A3a2fC6A448f266C61933500Fd4" // mainnet contract
+const minerAddress = "" // mainnet contract
 
 var started = true
 var canSell = true

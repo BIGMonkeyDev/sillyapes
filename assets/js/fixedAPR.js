@@ -9,7 +9,7 @@ const farms = [
         lpAbbreviation: 'LP ',
         poolId: 0,
         stakingToken: '0x76Eeb6Cb29BBE73dd43260873C6869fEe462d532',
-        liquidityLink: 'https://pulsex.mypinata.cloud/ipfs/bafybeidea3ibq4lu5t6vk6ihp4iuznjb3ltsdm5y2shv4atxgyd3d33aim/#/add/V2/0x898515c05794e195b4BA11c3e4e5A6d3c2a44FeC/PLS',
+        liquidityLink: 'https://pancakeswap.finance/liquidity/positions',
         isActive: true,
         
     } ,
@@ -22,7 +22,7 @@ const farms = [
         lpAbbreviation: 'Cake',
         poolId: 1,
         stakingToken: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
-        liquidityLink: 'https://pulsex.mypinata.cloud/ipfs/bafybeidea3ibq4lu5t6vk6ihp4iuznjb3ltsdm5y2shv4atxgyd3d33aim/#/?outputCurrency=0x6386704cD6f7A584EA9D23cccA66aF7EBA5a727e',
+        liquidityLink: 'https://pancakeswap.finance/swap?outputCurrency=0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82&inputCurrency=BNB',
         isActive: true,
        
     },
@@ -35,7 +35,7 @@ const farms = [
         lpAbbreviation: 'Avax',
         poolId: 2,
         stakingToken: '0x1CE0c2827e2eF14D5C4f29a091d735A204794041',
-        liquidityLink: 'https://pulsex.mypinata.cloud/ipfs/bafybeidea3ibq4lu5t6vk6ihp4iuznjb3ltsdm5y2shv4atxgyd3d33aim/#/?outputCurrency=0x6386704cD6f7A584EA9D23cccA66aF7EBA5a727e',
+        liquidityLink: 'https://pancakeswap.finance/swap?outputCurrency=0x1CE0c2827e2eF14D5C4f29a091d735A204794041&inputCurrency=BNB',
         isActive: true,
        
     },
@@ -48,7 +48,7 @@ const farms = [
         lpAbbreviation: 'USDT',
         poolId: 3,
         stakingToken: '0x55d398326f99059fF775485246999027B3197955',
-        liquidityLink: 'https://pulsex.mypinata.cloud/ipfs/bafybeidea3ibq4lu5t6vk6ihp4iuznjb3ltsdm5y2shv4atxgyd3d33aim/#/?outputCurrency=0x6386704cD6f7A584EA9D23cccA66aF7EBA5a727e',
+        liquidityLink: 'https://pancakeswap.finance/swap?outputCurrency=0x55d398326f99059fF775485246999027B3197955&inputCurrency=BNB',
         isActive: true,
        
     },
@@ -59,7 +59,7 @@ const farms = [
         lpAbbreviation: 'BTCB',
         poolId: 4,
         stakingToken: '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c',
-        liquidityLink: 'https://pulsex.mypinata.cloud/ipfs/bafybeidea3ibq4lu5t6vk6ihp4iuznjb3ltsdm5y2shv4atxgyd3d33aim/#/?outputCurrency=0x6386704cD6f7A584EA9D23cccA66aF7EBA5a727e',
+        liquidityLink: 'https://pancakeswap.finance/swap?outputCurrency=0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c&inputCurrency=BNB',
         isActive: true,
        
     }
@@ -69,9 +69,9 @@ const farms = [
 var contract;
 var tokenContract;
 
-const MASTERCHEF_ADDRESS = "0x49CE2850a045B6Ca4dcdf0b8d7eb574B6d1eE1B4";                //mainnet contract 0xF477Ac6b3d93F782444f799eDedAB972d0F7d5DF
+const MASTERCHEF_ADDRESS = "";                //mainnet contract 0xF477Ac6b3d93F782444f799eDedAB972d0F7d5DF
 
-const FARM_TOKEN_ADDRESS = "0xDbddb719581bF20742e8D955a508726b02701b8f"; //Yield 
+const FARM_TOKEN_ADDRESS = ""; //Yield 
 
 const DEAD_ADDRESS = "0x000000000000000000000000000000000000dEaD";
 

@@ -13,7 +13,7 @@ var started = true;
 
  
 
-const tokenAddress = '0xDbddb719581bF20742e8D955a508726b02701b8f';
+const tokenAddress = '';
 const DEAD_ADDRESS = "0x000000000000000000000000000000000000dEaD";
 
 
