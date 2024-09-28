@@ -13,7 +13,7 @@ var started = true;
 
  
 
-const tokenAddress = '0x993deA00A71210730eeF6664b47Fe0EC57E9Ee80';
+const tokenAddress = '0xDbddb719581bF20742e8D955a508726b02701b8f';
 const DEAD_ADDRESS = "0x000000000000000000000000000000000000dEaD";
 
 
@@ -248,7 +248,7 @@ function refreshData() {
 
     contract.methods.getTokenPriceInUSD().call()
     .then(priceInUSD => {
-        const formattedPrice = readableBUSD(priceInUSD, 7); // Format the price with 2 decimal places
+        const formattedPrice = readableBUSD(priceInUSD, 2); // Format the price with 2 decimal places
         $("#price").html(`$${formattedPrice}`); // Update the HTML element with the formatted price
     })
     .catch(err => {
@@ -257,7 +257,7 @@ function refreshData() {
 
     contract.methods.getCurrentTokenPrice().call()
     .then(currentTokenPrice => {
-        const formattedPrice = readableBUSD(currentTokenPrice, 7); // Format with 7 decimal places
+        const formattedPrice = readableBUSD(currentTokenPrice, 2); // Format with 7 decimal places
         $("#mintPrice").html(`$${formattedPrice}`); // Update the HTML element with the formatted price
     })
     .catch(err => {
@@ -291,13 +291,6 @@ function refreshData() {
 function roundNum1(num) {
     return parseFloat(num).toFixed(2); // Adjust the precision as needed
 }
-
-    
-
-
-
-    
-
 	
     if(!currentAddr) {
         console.log('check if user is logged in');

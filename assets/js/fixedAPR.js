@@ -8,7 +8,7 @@ const farms = [
         displayName: 'Gargantua/WBNB',
         lpAbbreviation: 'LP ',
         poolId: 0,
-        stakingToken: '',
+        stakingToken: '0x76Eeb6Cb29BBE73dd43260873C6869fEe462d532',
         liquidityLink: 'https://pulsex.mypinata.cloud/ipfs/bafybeidea3ibq4lu5t6vk6ihp4iuznjb3ltsdm5y2shv4atxgyd3d33aim/#/add/V2/0x898515c05794e195b4BA11c3e4e5A6d3c2a44FeC/PLS',
         isActive: true,
         
@@ -62,17 +62,6 @@ const farms = [
         liquidityLink: 'https://pulsex.mypinata.cloud/ipfs/bafybeidea3ibq4lu5t6vk6ihp4iuznjb3ltsdm5y2shv4atxgyd3d33aim/#/?outputCurrency=0x6386704cD6f7A584EA9D23cccA66aF7EBA5a727e',
         isActive: true,
        
-    },
-
-    {
-        index : 6,
-        displayName: 'Doge',
-        lpAbbreviation: 'Doge',
-        poolId: 5,
-        stakingToken: '0xbA2aE424d960c26247Dd6c32edC70B295c744C43',
-        liquidityLink: 'https://pulsex.mypinata.cloud/ipfs/bafybeidea3ibq4lu5t6vk6ihp4iuznjb3ltsdm5y2shv4atxgyd3d33aim/#/?outputCurrency=0x6386704cD6f7A584EA9D23cccA66aF7EBA5a727e',
-        isActive: true,
-       
     }
 
 ]
@@ -80,9 +69,9 @@ const farms = [
 var contract;
 var tokenContract;
 
-const MASTERCHEF_ADDRESS = "0xAC2f863828B393963Cc16Bf55881387706De7114";                //mainnet contract 0xF477Ac6b3d93F782444f799eDedAB972d0F7d5DF
+const MASTERCHEF_ADDRESS = "0x49CE2850a045B6Ca4dcdf0b8d7eb574B6d1eE1B4";                //mainnet contract 0xF477Ac6b3d93F782444f799eDedAB972d0F7d5DF
 
-const FARM_TOKEN_ADDRESS = "0x4346dE7aE44c72FBDb425121354F3d992ab9A81c"; //Yield 
+const FARM_TOKEN_ADDRESS = "0xDbddb719581bF20742e8D955a508726b02701b8f"; //Yield 
 
 const DEAD_ADDRESS = "0x000000000000000000000000000000000000dEaD";
 
@@ -643,7 +632,7 @@ async function updateStakingFees() {
             const depositFeeBP = await contract.methods.getStakingFeeBP(poolId).call();
 
             // Convert basis points to percentage
-            const depositFeePercentage = depositFeeBP / 100;
+            const depositFeePercentage = depositFeeBP / 10;
 
             // Update the UI
             const depositFeeElement = stakingBox.querySelector('.fee-value');
@@ -718,7 +707,7 @@ async function updateFarmTokenPrice() {
         const farmTokenPriceInUSD = await contract.methods.getFarmTokenPriceInUSD().call();
 
         // Format the price to a readable format
-        const formattedPrice = readableBUSD(farmTokenPriceInUSD, 7); // Format with 2 decimal places
+        const formattedPrice = readableBUSD(farmTokenPriceInUSD, 2); // Format with 2 decimal places
 
         // Update the UI with the farm token price
         const priceElement = document.getElementById('price');
@@ -964,7 +953,7 @@ async function updateTotalValueLockedInUSD() {
         console.log(`Raw Total Value Locked in USD: ${totalValueLockedInUSD}`);
 
         // Convert the value to readable USD format
-        const formattedValueLockedInUSD = readableBUSD(totalValueLockedInUSD, 4); // Convert value to readable USD
+        const formattedValueLockedInUSD = readableBUSD(totalValueLockedInUSD, 2); // Convert value to readable USD
 
         // Log the formatted value for debugging
         console.log(`Formatted Total Value Locked in USD: ${formattedValueLockedInUSD}`);
