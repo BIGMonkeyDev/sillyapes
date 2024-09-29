@@ -11,9 +11,9 @@ var stableContract;
 var contract;
 var started = true;
 
-const presaleAddress = ''; //mainnet contract 
+const presaleAddress = '0x3124c67329664c053778307a3fD0683d4DE92514'; //mainnet contract 
 
-const tokenAddress = '';
+const tokenAddress = '0xfC39A577f0e436934B4ceC6852EE3c6C5f5d16e5';
 
 const stableAddress = '0x55d398326f99059fF775485246999027B3197955';
 
