@@ -515,18 +515,18 @@ async function displayWinners() {
         latestWinners.forEach((winner, index) => {
             // Assuming each winner is an object with 'winnerAddress' and 'lotteryId' properties
             let formattedAddress;
-            let lotteryId;
+            let raffleId;
             
             if (winner && typeof winner === 'object') {
                 formattedAddress = `${winner.winnerAddress.slice(0, 4)}...${winner.winnerAddress.slice(-4)}`;
-                lotteryId = winner.lotteryId; // Adjust if your property name is different
+                raffleId = winner.raffleId; // Adjust if your property name is different
             } else {
                 console.error('Unexpected winner format:', winner);
                 return;
             }
 
             // Create a new div for each winner
-            const winnerDiv = $("<div>").addClass("winner-entry").html(`Raffle ID: ${lotteryId} - ${formattedAddress}`);
+            const winnerDiv = $("<div>").addClass("winner-entry").html(`Raffle ID: ${raffleId} - ${formattedAddress}`);
             $("#winnersList").append(winnerDiv);
         });
     } catch (error) {
