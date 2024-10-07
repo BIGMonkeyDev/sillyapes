@@ -8,8 +8,8 @@ const farms = [
         displayName: 'Gargantua/WBNB',
         lpAbbreviation: 'LP ',
         poolId: 0,
-        stakingToken: '0x76Eeb6Cb29BBE73dd43260873C6869fEe462d532',
-        liquidityLink: 'https://pancakeswap.finance/liquidity/positions',
+        stakingToken: '0xa3633C01B7016b6236C5c4aBd7C206607CF2Ca16',
+        liquidityLink: 'https://pancakeswap.finance/v2/add/0xfC39A577f0e436934B4ceC6852EE3c6C5f5d16e5/BNB',
         isActive: true,
         
     } ,
@@ -69,9 +69,9 @@ const farms = [
 var contract;
 var tokenContract;
 
-const MASTERCHEF_ADDRESS = "";                //mainnet contract 0xF477Ac6b3d93F782444f799eDedAB972d0F7d5DF
+const MASTERCHEF_ADDRESS = "0x203295eF6127dc778B17f8C301D6bD2E866da6af";                //mainnet contract 0xF477Ac6b3d93F782444f799eDedAB972d0F7d5DF
 
-const FARM_TOKEN_ADDRESS = ""; //Yield 
+const FARM_TOKEN_ADDRESS = "0xfC39A577f0e436934B4ceC6852EE3c6C5f5d16e5"; //Yield 
 
 const DEAD_ADDRESS = "0x000000000000000000000000000000000000dEaD";
 
