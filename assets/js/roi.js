@@ -16,11 +16,11 @@ var tokenContract;
 
 var farmLPPair;
 
-const fountainAddress = '';                        //mainnet contract
+const fountainAddress = '0x5174232c9355f175325d5f4BaeAbB21CA578a312';                        //mainnet contract
 
-const FARM_TOKEN_ADDRESS = '';                     //project Token
+const FARM_TOKEN_ADDRESS = '0xfC39A577f0e436934B4ceC6852EE3c6C5f5d16e5';                     //project Token
 
-const LPAddress = '';                              // LP Address
+const LPAddress = '0xa3633C01B7016b6236C5c4aBd7C206607CF2Ca16';                              // LP Address
 
 const deadAddress = '0x000000000000000000000000000000000000dEaD';                            // DEAD Address  
 const FACTORY_PAIR_ADDRESS = "0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE";                   //Main Blockchain LP
@@ -284,11 +284,11 @@ function refreshData() {
         const farmReserve1 = farmReserves[1];
 
         // Assuming farmReserve0 is the farm token
-        const farmTokenPriceInNative = web3.utils.fromWei(farmReserve1) / web3.utils.fromWei(farmReserve0);
+        const farmTokenPriceInNative = web3.utils.fromWei(farmReserve0) / web3.utils.fromWei(farmReserve1);
         const priceInUSD = farmTokenPriceInNative * nativePriceInStable;
 
         // Update the #price element with priceInUSD
-        $('#price').html(`${priceInUSD.toFixed(7)}`);
+        $('#price').html(`${priceInUSD.toFixed(2)}`);
 
         // Fetch available earnings and calculate their USD value
         contract.methods.getAvailableEarnings(currentAddr).call().then(function (earnings) {
@@ -303,10 +303,10 @@ function refreshData() {
 
         // Fetch user info and calculate USD values
         contract.methods.getUserInfo(currentAddr).call().then(user => {
-            var initialDeposit = readableBUSD(user._initialDeposit, 4);
-            var userDeposit = readableBUSD(user._userDeposit, 4);            
-            var totalWithdrawn = readableBUSD(user._totalWithdrawn, 4);            
-            var referralReward = readableBUSD(user._referralReward, 4); 
+            var initialDeposit = readableBUSD(user._initialDeposit, 2);
+            var userDeposit = readableBUSD(user._userDeposit, 2);            
+            var totalWithdrawn = readableBUSD(user._totalWithdrawn, 2);            
+            var referralReward = readableBUSD(user._referralReward, 2); 
 
             // Calculate USD values
             var initialDepositUsd = Number(priceInUSD * initialDeposit).toFixed(2);
